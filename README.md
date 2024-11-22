@@ -12,6 +12,17 @@ This document outlines the necessary steps to run the application and conduct te
 > [!IMPORTANT]
 > Always start with a new database!
 
+> [!NOTE]
+> The branch switch used below is due to the fact that when I run the tests or
+>initialize the database, errors related to access to local packages/directories
+>arise. These errors can be resolved by adding a dot (".") before the local files
+>to be accessed. However, when trying to run the application, these dots (".")
+>cause errors.
+>The only solution I have found so far, after analyzing the behavior of the
+>software unit, is the one proposed in the following steps.
+>I will continue investigating this matter.
+
+
 - Create a database image using the [following steps](/postgresql/README.md) and run the container.
 - Switch to the `testing` branch and within the `app` directory, run the following commands:
 
