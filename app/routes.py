@@ -1,8 +1,8 @@
 from flask import request
 from flask import jsonify
 from http import HTTPStatus
-from api_interface import ApiInterface
-from external_api import ExternalApiV1
+from .api_interface import ApiInterface
+from .external_api import ExternalApiV1
 
 
 def register_routes(app, db):

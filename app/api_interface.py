@@ -2,8 +2,8 @@ from flask import jsonify
 from http import HTTPStatus
 from requests.exceptions import RequestException, Timeout, ConnectionError
 from datetime import datetime
-from models import db, FavoriteMovie
-from external_api import ExternalApi, ExternalApiV1
+from .models import db, FavoriteMovie
+from .external_api import ExternalApi, ExternalApiV1
 
 
 class ApiInterface:

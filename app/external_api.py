@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 import requests
 from tenacity import retry, wait_exponential, stop_after_attempt
-from settings import API_TOKEN, POPULAR_MOVIES_URL
+from .settings import API_TOKEN, POPULAR_MOVIES_URL
 
 
 class ExternalApi(ABC):

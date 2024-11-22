@@ -2,7 +2,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from typing import Type
-from config import Config
+from .config import Config
 
 
 db = SQLAlchemy()
@@ -29,7 +29,7 @@ def create_app(config_class: Type[Config] = Config) -> Flask:
 
     db.init_app(app)
 
-    from routes import register_routes
+    from .routes import register_routes
     register_routes(app, db)
 
     migrate = Migrate(app, db)
